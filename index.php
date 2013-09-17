@@ -13,9 +13,19 @@
 	    	<!-- function to reload page content  -->
 	    	<script>
 	    		function GetWord(){
+	    		//show animation for loading, delay to
+	    		$( "#loadingProgressG" ).show(0).delay(500);
+
+
+	    		//get new word from page
 	    		var q = $('<div></div>').load( "index.php #wordarea" );
 	    		console.log(q);
+
+	    		//place new word in page
 	    		$( "#wordarea" ).replaceWith(q);
+
+	    		//hide animation
+	    		$( "#loadingProgressG" ).toggle(0).delay(500);
 	    	}
 	    	</script>
 
@@ -34,6 +44,11 @@
 				$word = json_decode($match[0]);
 
 				//print out related information
+				echo "
+				<div id='loadingProgressG'>
+				<div id='loadingProgressG_1' class='loadingProgressG'>
+				</div>
+				</div> ";
 
 				echo "<div id='wordarea'>";
 				echo   "<h1 id='word'>" . $word->word . " (".$word->part.")"."</h1>";
@@ -47,6 +62,8 @@
 				<p>Aaron Hallink <a href="MAILTO:me@aaronhallink.com">me@aaronhallink.com</a></p>
 		            </div>
 		</div>
+
+
 	</body>
 
 </html>
