@@ -2,18 +2,17 @@
 <html>
 
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-
 		<!-- inlclude boot strap stuff and libraries-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="http://code.jquery.com/jquery.js"></script>
 	    	<script src="js/bootstrap.min.js"></script>
 	    	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	    	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 	    	<!-- function to reload page content  -->
 	    	<script>
 	    		function GetWord(){
-	    		//show animation for loading, delay to
+	    		//show animation for loading, delay to give animation a chance to show.
 	    		$( "#loadingProgressG" ).show(0).delay(500);
 
 
