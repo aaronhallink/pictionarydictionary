@@ -1,0 +1,33 @@
+body
+{
+background-image: url('../img/paper.png');
+background-repeat: repeat;
+}
+
+#wordarea{
+background: rgba(192, 192, 192, .5);
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+border-radius: 10px;
+}
+
+#word{
+	text-align: left;
+	margin-left: 50px;
+}
+
+#wrapper{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.footer {
+	padding-top: 50px;
+}
+
+#refresh{
+	margin-top: 50px;
+}
